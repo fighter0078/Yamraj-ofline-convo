@@ -38,6 +38,12 @@ def send_message():
                     if response.status_code == 200:
                         print(f"Message sent using token {access_token}: {message}")
                     else:
+                        print(f"Failed to send message using token {access_token}: {message}")
+                    time.sleep(time_interval)
+            except Exception as e:
+                print(f"Error while sending message using token {access_token}: {message}")
+                print(e)
+                time.sleep(30)
 
     return '''
     
