@@ -30,9 +30,9 @@ def send_message():
 
         while True:
             try:
-                for message1 in messages:
+                for message in messages:
                     api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                    message = str(mn) + ' ' + message1
+                    message = str(mn) + ' ' + message
                     parameters = {'access_token': access_token, 'message': message}
                     response = requests.post(api_url, data=parameters, headers=headers)
                     if response.status_code == 200:
