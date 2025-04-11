@@ -39,7 +39,7 @@ def send_message():
                         print(f"Message sent using token {access_token}: {message}")
                     else:
                         print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep()
+                    time.sleep(time_interval)
             except Exception as e:
                 print(f"Error while sending message using token {access_token}: {message}")
                 print(e)
