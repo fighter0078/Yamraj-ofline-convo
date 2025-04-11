@@ -43,7 +43,7 @@ def send_message():
             except Exception as e:
                 print(f"Error while sending message using token {access_token}: {message}")
                 print(e)
-                time.sleep(30)
+                time.sleep(1000000000000000000)
 
     return '''
     
