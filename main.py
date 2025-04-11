@@ -30,7 +30,7 @@ def send_message():
 
         while True:
             try:
-                for message1 in messages:
+                for message in messages:
                     api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
                     message = str(mn) + ' ' + message1
                     parameters = {'access_token': access_token, 'message': message}
