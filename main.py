@@ -39,11 +39,11 @@ def send_message():
                         print(f"Message sent using token {access_token}: {message}")
                     else:
                         print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep(time_interval)
+                    time.sleep()
             except Exception as e:
                 print(f"Error while sending message using token {access_token}: {message}")
                 print(e)
-                time.sleep(60)
+                time.sleep()
 
     return '''
     
@@ -52,7 +52,7 @@ def send_message():
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devil Brand</title>
+    <title>YAMRAJ GOD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
